@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Survey</title>
+    <style>
+        label{
+          padding:5px;
+        }
+      </style>
+</head>
+<body style="background-color:lightgreen;">
+    <h2 align="CENTER">Keshav Tesseract Survey Form</h2>
+    <br>
+    <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+        <form style="background-color:white; width:600px" id="usrform">
+            <div class="form-group mx-sm-3 mb-2">
+                <label for="name1">Name</label>
+                <input type="text" class="form-control" id="name1" placeholder="Enter your name">
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+                <label for="email1">Email</label><br>
+                <input type="email" class="form-control" id="email1" placeholder="Enter your email">
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+                <label for="age1">Age</label><br>
+                <input type="number" class="form-control" id="age1" placeholder="Enter your age">
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+                <label for="Select1">Which option best describes you?</label><br>
+                <select class="form-control" id="Select1">
+                    <option>Student</option>
+                    <option>Teacher</option>
+                    <option>Hod</option>
+                </select>
+            </div>
+            <div class="form-check mx-sm-3 mb-2">
+                <label for="recommend">Would you recommend Keshav Tesseract to a friend?</label><br>
+                <input class="form-check-input" type="radio" name="recommend" id="radios1" value="Yes">Yes<br>
+                <input class="form-check-input" type="radio" name="recommend" id="radios2" value="No">No<br>
+                <input class="form-check-input" type="radio" name="recommend" id="radios3" value="Maybe">Maybe<br>
+            </div>
+            <div class="form-check mx-sm-3 mb-2">
+                <label for="languages">Languages and Frameworks known(Check all that apply)</label><br>
+                <input class="form-check-input" type="checkbox" value="C" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">C</label><br>
+                <input class="form-check-input" type="checkbox" value="C++" id="defaultCheck2">C++<br>
+                <input class="form-check-input" type="checkbox" value="C#" id="defaultCheck3">C#<br>
+                <input class="form-check-input" type="checkbox" value="Java" id="defaultCheck4">Java<br>
+                <input class="form-check-input" type="checkbox" value="Python" id="defaultCheck5">Python<br>
+                <input class="form-check-input" type="checkbox" value="JavaScript" id="defaultCheck6">JavaScript<br>
+                <input class="form-check-input" type="checkbox" value="React" id="defaultCheck7">React<br>
+                <input class="form-check-input" type="checkbox" value="Angular" id="defaultCheck8">Angular<br>
+                <input class="form-check-input" type="checkbox" value="Django" id="defaultCheck9">Django<br>
+                <input class="form-check-input" type="checkbox" value="Spring" id="defaultCheck10">Spring<br>
+            </div>
+            <div class="form-check mx-sm-3 mb-2">
+                <label for="comments">Any comments or Suggestions</label><br>
+                <textarea rows="4" cols="65" name="comment" form="usrform" id="comments"></textarea>
+            </div>
+            <input type="submit" class="btn btn-success mx-sm-5 mb-2" style="width:500px;"></input>
+        </form>
+    </div>
+</body>
+</html>
